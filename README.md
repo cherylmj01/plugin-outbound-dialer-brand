@@ -64,7 +64,7 @@ This plugin will allow you to make outbound calls through your brands. The brand
 3. Go to your flex console >> Search for `Assets`.
 4. Add this file that you created above as an Assets.
 5. Once the Asset is deployed, copy the URL of the Assets. Please refer the screenshot below : 
-![Assets screenshot]() 
+![Assets screenshot](https://github.com/cherylmj01/plugin-outbound-dialer-brand/blob/main/resources/Assets.png) 
 6. Paste this URL in the `.env` file within this repository.
 
 ## Step 2: Download Plugin Code
@@ -117,9 +117,13 @@ See the [Deploy and Release documentation](https://www.twilio.com/docs/flex/deve
 
 This plugin will retrieve information from the provided asset link and it will display the brands in a component within the dialpad as shown below: 
 
-![Outbound Dialer screenshot]()
+![Outbound Dialer screenshot](https://github.com/cherylmj01/plugin-outbound-dialer-brand/blob/main/resources/Outbound_Dialer.png)
 
-When an agent selects the brand to make a call, a call will be made from the number that is mapped to that brand within the Twilio asset. If the brand list is not able to load for some reason, then the agent will be notified however the agent will still be able to make a call using the default caller ID.
+When an agent selects the brand to make a call, a call will be made from the number that is mapped to that brand within the Twilio asset. 
+
+If the brand list is not able to load for some reason, then the agent will be notified as shown below, however the agent will still be able to make a call using the default caller ID.
+
+![Brand List did not load screenshot](https://github.com/cherylmj01/plugin-outbound-dialer-brand/blob/main/resources/BrandListError.png)
 
 
 
