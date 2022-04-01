@@ -14,7 +14,7 @@ const initialState = {
   };
 
   function getBrandNumberList() {
-    return fetch(process.env.REACT_BRAND_NUMBERS_JSON_URL)
+    return fetch(process.env.REACT_APP_BRAND_NUMBERS_JSON_URL)
     .then((response) => response.json())
     .catch((err) => {
       return `Error: ${err}`;
