@@ -3,6 +3,12 @@ import React from "react";
 import { StyledSelect, Caption } from "./BrandSelector.Styles";
 
 import MenuItem from "@material-ui/core/MenuItem";
+import { injectGlobal } from 'react-emotion';
+import global from './global.css';
+
+injectGlobal`
+  ${global}
+`;
 
 // import * as Flex from "@twilio/flex-ui";
 
@@ -40,7 +46,7 @@ class BrandSelector extends React.Component {
                                   onChange={(e) => this.props.updateBrand(e.target.value)}>
                             <MenuItem key="placeholder" value="placeholder" disabled>Select Brand</MenuItem>
                             {callerIdsArray.map( (element) => ( 
-                            <MenuItem key={element} value={callerIds[element]}>
+                            <MenuItem key={element} value={callerIds[element]} >
                             {element}
                             </MenuItem>
                             ))}
